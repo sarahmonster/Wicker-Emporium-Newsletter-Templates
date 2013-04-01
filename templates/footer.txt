@@ -1,0 +1,23 @@
+
+============================================================
+Wicker Emporium (http://wickeremporium.ca) 
+
+Facebook (http://facebook.com/wickeremporium) 
+Twitter (http://twitter.com/wickeremporium) 
+Pinterest (http://pinterest.com/wickeremporium)
+
+Living (http://wickeremporium.ca/products/living_rooms) 
+Dining (http://wickeremporium.ca/products/dining_rooms) 
+Bedrooms (http://wickeremporium.ca/products/bedrooms) 
+Storage (http://wickeremporium.ca/products/storage) 
+Gifts (http://wickeremporium.ca/products/gift_ideas) 
+Holiday Decor (http://wickeremporium.ca/products/holiday_decor) 
+Sale (http://wickeremporium.ca/sale)
+
+============================================================
+*|IFNOT:ARCHIVE_PAGE|**|LIST:DESCRIPTION|*
+© *|CURRENT_YEAR|* Wicker Emporium, 114 Chain Lake Drive, Halifax NS B3S 1B1
+
+** email (*|FORWARD|*)
+** unsubscribe from this list (*|UNSUB|*)
+** update subscription preferences (*|UPDATE_PROFILE|*)
