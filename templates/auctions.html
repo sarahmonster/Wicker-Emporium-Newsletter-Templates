@@ -106,9 +106,9 @@
 
 			/* Resize images at smaller screen sizes. */
 			body[yahoo] .item-image {width:280px !important; height:260px !important;}
-			body[yahoo] .this-week {width:280px !important; height:15px !important;}
 			body[yahoo] .logo {width:320px !important; height:80px !important;}
-
+			body[yahoo] .description {font-size: .8em;}
+			
 			/* Resize page shadow at smaller screen sizes. */
 			body[yahoo] .shadow {width:280px !important; height:4px !important;}
 
@@ -168,7 +168,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 
 		<!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
 		<table cellpadding="0" cellspacing="0" border="0" align="center" style="width:100% !important; margin:0; padding:0;">
-			<tr bgcolor="#c3d0d8" background="img/background.jpg" style="background: url('img/background.jpg') no-repeat center;" >
+			<tr bgcolor="#c3d0d8" background="http://mkg.wickeremporium.ca/mailchimp/templates/img/background.jpg" style="background: url('http://mkg.wickeremporium.ca/mailchimp/templates/img/background.jpg') no-repeat center;" >
 				<td>
 
 
@@ -193,14 +193,14 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 
 						<!-- HEADER -->
 						<tr>
-							<td>
+							<td style="padding: 10px; padding-bottom: 0;">
 								<!-- set a value for bgcolor -->
 								<table bgcolor="#ffffff" text="#312f2d" width="100%" cellpadding="0" cellspacing="0" border="0">	
 									<tr>
 										<!-- header left: logo and link to homepage -->
 										<td width="320" valign="top">
 											<!-- set an image for header left - must be 320px width (height can be variable) -->
-											<a href="#" target="_blank"><img src="img/wickeremporium.gif" width="320" height="85" border="0" alt="Header (left)" /></a>
+											<a href="#" target="_blank"><img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/wickeremporium.gif" width="320" height="85" border="0" alt="Header (left)" /></a>
 											</td>
 									<!-- /header left -->
 									<!-- header right: hidden in mobile version -->
@@ -220,11 +220,31 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 						</tr>
 						<!-- /HEADER -->
 
+						
+
+
+						<!-- NAVIGATION -->
+						<tr>
+							<td bgcolor="brown" width="110%">
+							
+							<a style="float: left; display: inline;" href="http://wickeremporium.ca/products/living_rooms"><img src="http://wickeremporium.ca/mkg/newsletter/images/header/header_05.png" width="56" height="29" alt="Living"></a>
+							<a  style="float: left; display: inline;" href="http://wickeremporium.ca/products/dining_rooms"><img src="http://wickeremporium.ca/mkg/newsletter/images/header/header_06.png" width="66" height="29" alt="Dining"></a>
+							<a style="float: left; display: inline;"  href="http://wickeremporium.ca/products/bedrooms"><img src="http://wickeremporium.ca/mkg/newsletter/images/header/header_07.png" width="91" height="29" alt="Bedrooms"></a>
+							<a style="float: left; display: inline;"  href="http://wickeremporium.ca/products/storage"><img src="http://wickeremporium.ca/mkg/newsletter/images/header/header_08.png" width="74" height="29" alt="Storage"></a>
+							<a style="float: left; display: inline;"  href="http://wickeremporium.ca/products/gifts"><img src="http://wickeremporium.ca/mkg/newsletter/images/header/header_09.png" width="54" height="29" alt="Gifts"></a>
+							<a style="float: left; display: inline;"  href="http://wickeremporium.ca/products/holiday_decor"><img src="http://wickeremporium.ca/mkg/newsletter/images/header/header_10.png" width="111" height="29" alt="Holiday Decor"></a>
+							<a style="float: left; display: inline;"  href="http://wickeremporium.ca/products/on_sale"><img src="http://wickeremporium.ca/mkg/newsletter/images/header/header_11.png" width="48" height="29" alt="Sale"></a>
+														
+							</td>
+						</tr>
+						<!-- /NAVIGATION -->
+
+
 
 						<!-- CONTENT -->
 						<!-- set a value for bgcolor -->
-						<tr bgcolor="#ffffff">
-							<td style="padding-top:20px;">
+						<tr>
+							<td style="padding: 10px; padding-top: 0;">
 
 
 								<!-- item details -->
@@ -232,17 +252,26 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 								
 								<table style="margin-bottom:1em;" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
 									<tr>
-										<!-- hero article textarea -->
+										
 										<td>
 											<table bgcolor="#ffffff" width="100%" cellpadding="10" cellspacing="0" border="0">
 												<tr>
-													<td>								
-														<img src="img/this-week-on-the-auction-block.png" alt="this-week-on-the-auction-block" width="560" height="30" class="this-week" />
+													<td>	
+													
+													<!-- header text -->
+													<table cellpadding="0" border="0" cellspacing="0"><tr>
+													<td width="300" valign="top">							
+														<img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/this-week-on-the-auction-block.png" alt="This week on the auction block" width="300" height="30" class="this-week" />
+													</td>
+													<td width="240" valign="top" class="hide">
+															<img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/on-the-block.png" alt="this-week-on-the-auction-block" width="240" height="30" class="this-week" />
+													</td>
+													</tr></table>
 													</td>
 												</tr>
 												<tr>
 													<td>
-														<img src="img/item-image.png" alt="item-image" width="560" height="520" alt="Item title" class="item-image" style="margin-bottom: -100px;"/>
+														<img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/item-image.png" alt="item-image" width="560" height="520" alt="Item title" class="item-image" style="margin-bottom: -100px;"/>
 														
 													</td>
 												</tr>
@@ -250,13 +279,13 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 													<table width="100%" cellpadding="5" border="0" cellspacing="0" bgcolor="3b230a" align="center" style="position: relative; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);"><tr>
 													
 													<td>	
-													<table style="border: 1px dashed #d6ebf3;" cellpadding="20" align="center"><tr><td align="center">
+													<table class="description" style="border: 1px dashed #d6ebf3;" cellpadding="20" align="center"><tr><td align="center">
 														<p style="color: #9b8e7c; text-transform: uppercase; letter-spacing: .7px; font-style: normal; font-size: 18px; font-family: Arial; font-weight: bold;">Cambria Collection Bed</p>
-														<img src="img/line.png" alt="line" width="240" height="2" /><br>
+														<img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/line.png" alt="line" width="240" height="2" /><br>
 														<p style="font-size: 19px; font-family: Georgia; font-style: italic; color: #c1b8ac;">This beautiful bed frame is constructed of solid reclaimed wood and acacia wood. Acacia is native to India and grows very slowly. This makes the wood incredibly hard and durable.
 														</p>
 														<br>
-														<img src="img/line.png" alt="line" width="240" height="2" /><br>
+														<img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/line.png" alt="line" width="240" height="2" /><br>
 														<p style="color: #9b8e7c; text-transform: uppercase; letter-spacing: .7px; font-style: normal; font-size: 14px; font-family: Arial; font-weight: bold;">
 														Caramel colour. 56" high; 87" long; 70" wide<br>
 List price: $1789.99 Starting bid: $200<br>
@@ -307,7 +336,7 @@ bidding april 2-5 only!<br>
 													<td style="color:#9b8e7c;">
 														*|FACEBOOK:LIKE|*
 														*|TWITTER:TWEET|*
-                                                        <a href="*|FORWARD|*"><img src="http://wickeremporium.ca/mkg/newsletter/images/email.png" alt="email" width="61" height="21"></a>
+                                                        <a style="display: inline" href="*|FORWARD|*"><img src="http://wickeremporium.ca/mkg/newsletter/images/email.png" alt="email" width="61" height="21"></a>
 
 													</td>
 												</tr>
