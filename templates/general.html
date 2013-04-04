@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	<title>*|MC:SUBJECT|*</title>
+
+	<!-- Facebook sharing information tags -->
+	<meta property="og:title" content="*|MC:SUBJECT|*" />
+
+	<style type="text/css">
+		/* EMBEDDED CSS
+		   Android Mail doesn't support "class" declarations outside of a media query so use inline CSS as a rule.
+		   More info: Http://www.emailonacid.com/blog/the_android_mail_app_and_css_class_declarations/ */
+
+
+		/****** EMAIL CLIENT BUG FIXES - BEST NOT TO CHANGE THESE ********/
+
+
+		/* Forces Hotmail to display emails at full width. */
+		.ExternalClass {width:100%;}
+
+		/* Forces Hotmail to display normal line spacing. */
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+
+		/* Prevents Webkit and Windows Mobile platforms from changing default font sizes. */
+		body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+
+		/* Resets all body margins and padding to "0" for good measure. */
+		body {margin:0; padding:0;}
+
+		/* Resolves webkit padding issue. */
+		table {border-spacing:0;}
+
+		/* Resolves the Outlook 2007, 2010, and Gmail td padding issue. */
+		table td {border-collapse:collapse;}
+
+
+		/****** END BUG FIXES ********/
+
+
+		/****** RESETTING DEFAULTS, IT IS BEST TO OVERWRITE THESE STYLES INLINE ********/
+
+
+		/* This sets a clean slate for all clients EXCEPT Gmail.
+		   From there it forces you to do all of your spacing inline during the development process.
+		   Be sure to stick to margins because paragraph padding is not supported by Outlook 2007/2010.
+		   Remember: Hotmail does not support "margin" nor the "margin-top" properties.
+		   Stick to "margin-bottom", "margin-left", "margin-right" in order to control spacing.
+		   It also wise to set the inline top-margin to "0" for consistancy in Gmail for every inline instance
+		   of a paragraph tag. */	
+		p {margin:0; padding:0; margin-bottom:0;}
+
+		/* This CSS will overwrite Hotmails default CSS and make your headings appear consistant with Gmail.
+		   From there, you can override with inline CSS if needed. */
+		h1, h2, h3, h4, h5, h6 {color:#312f2d; line-height:100%;}
+
+
+		/****** END RESETTING DEFAULTS ********/
+
+
+		/****** EDITABLE STYLES - FOR YOUR TEMPLATE ********/
+
+
+		/* The "body" is defined here for Yahoo Beta because it does not support your body tag. Instead, it will
+		   create a wrapper div around your email and that div will inherit your embedded body styles.
+		   The "#body_style" is defined for AOL because it does not support your embedded body definition nor
+		   your body tag, we will use this class in our wrapper div. */
+		body, #body_style {width:100% !important; min-height:1000px; color:#312f2d; background:#f9f0e3; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;}
+
+		/* This is the embedded CSS link color for Gmail. This will overwrite Hotmail and Yahoo Beta's
+		   embedded link colors and make it consistent with Gmail. Also use this rule on inline CSS. */
+		a         {color:#66543A; text-decoration:none;}
+
+		/* There is no way to set these inline so you have the option of adding pseudo class definitions here.
+		   They won't work for Gmail or older Lotus Notes but it's a nice addition for all other clients. */
+		a:link    {color:#66543A; text-decoration:none;}
+		a:visited {color:#211b13; text-decoration:none;}
+		a:focus   {color:#4E697C !important;}
+		a:hover   {color:#4E697C !important;}
+
+		/* A nice and clean way to target phone numbers you want clickable and avoid a mobile phone from
+		   linking other numbers that look like, but are not phone numbers. Use these two blocks of code to
+		   "unstyle" any numbers that may be linked. The second block gives you a class ".mobile_link" to apply
+		   with a span tag to the numbers you would like linked and styled.
+		   More info: http://www.campaignmonitor.com/blog/post/3571/using-phone-numbers-in-html-email/ */
+		a[href^="tel"], a[href^="sms"] {text-decoration:none; color:#312f2d; pointer-events:none; cursor:default;}
+		.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration:default; color:#66543A !important; pointer-events:auto; cursor:default;}
+
+
+		/****** MEDIA QUERIES ********/
+		/* You must use attribute selectors in your media queries to prevent Yahoo from rendering these styles.	
+		   We added a yahoo attribute in the body tag to complete this fix. 
+		   More info: http://www.emailonacid.com/blog/details/C13/stop_yahoo_mail_from_rendering_your_media_queries */
+
+		/* Target mobile devices. */
+		/* @media only screen and (max-device-width: 639px) { */
+		@media only screen and (max-width: 639px) {
+			
+			/* Hide elements at smaller screen sizes (!important needed to override inline CSS). */
+			body[yahoo] .hide {display:none !important;}
+
+			/* Adjust table widths at smaller screen sizes. */
+			body[yahoo] .table {width:320px !important;}
+			body[yahoo] .innertable {width:280px !important;}
+
+			/* Resize images at smaller screen sizes. */
+			body[yahoo] .header-image {width:280px !important; height:260px !important;}
+			body[yahoo] .logo {width:320px !important; height:80px !important;}
+			
+			/* Resize page shadow at smaller screen sizes. */
+			body[yahoo] .shadow {width:280px !important; height:4px !important;}
+
+			/* Collapse footer columns. */
+			body[yahoo] .footer-left	{width:320px !important;}
+			body[yahoo] .footer-right {width:320px !important;}
+			body[yahoo] .footer-right img {float:left !important; margin:0 1em 0 0 !important;}
+
+		}
+
+		/* Target tablet devices. */
+		/* @media only screen and (min-device-width: 640px) and (max-device-width: 1024px) { */
+		@media only screen and (min-width: 640px) and (max-width: 1024px) {
+
+		}
+
+
+		/*** END EDITABLE STYLES ***/
+
+
+		/****** TEMPORARY - THESE SHOULD BE MOVED INLINE AT END OF YOUR DEVELOPMENT PROCESS ********/
+
+		h1 {font-size:26px; line-height:1.2; font-weight:normal; margin-top:0; margin-bottom:0;}
+
+		p {margin-top:0; margin-bottom:0;}
+
+		img {display:block; border:none; outline:none; text-decoration:none;}
+
+		/* Remove spacing around Outlook 07, 10 tables */
+		table {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;}
+
+		/*** END TEMPORARY ***/
+	</style>
+
+
+</head>
+
+
+<body style="width:100% !important; min-height:1000px; color:#312f2d; background:#c3d0d8; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.4;"
+alink="#66543A" link="#66543A" bgcolor="#c3d0d8" text="#312f2d" yahoo="fix">
+<!-- You may adjust each of the values above for your template as needed.
+
+We've included the style attribute for Gmail because it does not support embedded CSS and it will convert this body tag to
+a div. Since it gets converted to a div, the other body attributes like bgcolor are ignored.
+
+We included body attributes (alink, link, bgcolor and text) for Lotus Notes 6.5 and 7, as these clients do not offer much
+support for embedded nor inline CSS. 
+
+The "min-height" attribute is set for Gmail and AOL since they will be converting this body tag to a div and we want our
+background color to reach the bottom of the page. 
+
+The yahoo attribute is added if you are using media queries for mobile devices (see media queries above) -->
+	
+<!-- PAGE WRAPPER -->
+	<div id="body_style"> 
+
+
+		<!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
+		<table cellpadding="0" cellspacing="0" border="0" align="center" style="width:100% !important; margin:0; padding:0;">
+			<tr bgcolor="#c3d0d8" background="http://mkg.wickeremporium.ca/mailchimp/templates/img/background.jpg">
+				<td>
+
+
+					<!-- Tables are the most common way to format your email consistently. Set your table widths inside cells and in most cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. -->
+					<table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="table">
+							
+							
+							
+							<!-- PREHEADER -->
+								<tr>
+									<td align="center" style="font-size: 13px; text-align: center; padding: 10px 40px;">
+                                      <!-- *|IFNOT:ARCHIVE_PAGE|* --><p style="text-transform: uppercase; font-weight: bold;">Email look funny? <a href="*|ARCHIVE|*" target="_blank">View in browser</a>. </p>                                  										<!-- *|END:IF|* -->                                                   
+                                
+                                   <div mc:edit="std_preheader_content">Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.</div>
+
+                                </td>
+                            </tr>
+                        <!-- // End Template Preheader \\ -->
+                        
+                        
+
+
+						<!-- HEADER -->
+						<tr>
+							<td style="padding: 10px; padding-bottom: 0;">
+								<!-- set a value for bgcolor -->
+								<table bgcolor="#ffffff" text="#312f2d" width="100%" cellpadding="0" cellspacing="0" border="0" style="box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);">	
+									<tr>
+										<!-- header left: logo and link to homepage -->
+										<td width="320" valign="top">
+											<!-- set an image for header left - must be 320px width (height can be variable) -->
+											<a href="#" target="_blank"><img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/wickeremporium.png" width="320" height="85" border="0" alt="Header (left)" /></a>
+											</td>
+									<!-- /header left -->
+									<!-- header right: hidden in mobile version -->
+										<td align="right" width="280" valign="top" class="hide">
+											<table>
+											<tr>
+												<td><a href="http://facebook.com/WickerEmporium"><img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/facebook.png" width="59" height="91" alt="Facebook"></a></td>
+												<td><a href="http://twitter.com/WickerEmporium"><img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/twitter.png" width="60" height="91" alt="Twitter"></a></td>
+												<td><a href="http://pinterest.com/wickeremporium"><img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/pinterest.png" width="63" height="91" alt="Pinterest"></a></td>
+											</tr>
+											</table>
+										</td>
+									<!-- /header right -->
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- /HEADER -->
+
+						
+
+
+						<!-- NAVIGATION -->
+						<tr>
+							<td background="http://mkg.wickeremporium.ca/mailchimp/templates/img/ribbon.png" width="110%" height="32" class="hide" valign="middle" align="center">
+							
+							<a style="float: left; display: inline; margin-top: -1px; margin-left: 20px;" href="http://wickeremporium.ca/products/living_rooms"><img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/living.png" alt="Living" width="68" height="14" /></a>
+							<a  style="float: left; display: inline; margin-top: -1px;" href="http://wickeremporium.ca/products/dining_rooms"><img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/dining.png" alt="Dining" /></a>
+							<a style="float: left; display: inline;  margin-top: -1px;"  href="http://wickeremporium.ca/products/bedrooms"><img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/bedrooms.png" alt="bedrooms" width="91" height="14" /></a>
+							<a style="float: left; display: inline;  margin-top: -1px;"  href="http://wickeremporium.ca/products/storage"><img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/storage.png" alt="storage" width="80" height="14" /></a>
+							<a style="float: left; display: inline; margin-top: -1px;"  href="http://wickeremporium.ca/products/gifts"><img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/gifts.png" alt="gifts" width="56" height="14" /></a>
+							<a style="float: left; display: inline; margin-top: -1px;"  href="http://wickeremporium.ca/products/holiday_decor"><img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/holiday.png" alt="holiday" width="126" height="14" /></a>
+							<a style="float: left; display: inline; margin-top: -1px;"  href="http://wickeremporium.ca/products/on_sale"><img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/sale.png" alt="sale" width="69" height="14" /></a>
+														
+							</td>
+						</tr>
+						<!-- /NAVIGATION -->
+
+
+
+						<!-- CONTENT -->
+						<!-- set a value for bgcolor -->
+						<tr>
+							<td style="padding: 10px; padding-top: 0;">
+
+
+								<!-- item details -->
+								
+								
+								<table style="margin-bottom:1em;" width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="innertable">
+									<tr>
+										
+										<td>
+											<table bgcolor="#ffffff" width="100%" cellpadding="10" cellspacing="0" border="0" style="padding-top: 20px; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);">
+												<tr>
+													<td>
+														
+											<!-- // Begin Module: Standard Header Image \\ -->
+                                            	<img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_600.gif" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext="" class="header-image" style="max-width: 560px;">
+                                            	<!-- // End Module: Standard Header Image \\ -->
+														
+													</td>
+												</tr>
+												<tr><td>
+												<!-- side padding --><table width="100%" cellpadding="0" cellspacing="0" border="0">
+												<tr>
+												<td width="10"> </td>
+												<td>
+													<!-- extra outside border --><table width="100%" cellpadding="5" border="0" cellspacing="0" bgcolor="3b230a" align="center" style="position: relative; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);"><tr>
+
+													
+													<td>
+													
+													<!--description!--><table class="description" style="border: 1px dashed #d6ebf3;" cellpadding="20" align="center"><tr><td align="center">
+														<div mc:edit="item-title" style="color: #9b8e7c; text-transform: uppercase; letter-spacing: .7px; font-style: normal; font-size: 18px; font-family: Arial; font-weight: bold;"><a style="color: #9b8e7c;" href="http://www.facebook.com/WickerEmporium/app_261949193920258">Cambria Collection Bed</a></div><br>
+														<img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/line.png" alt="line" width="240" height="2" /><br>
+														<div mc:edit="description" style="font-size: 19px; font-family: Georgia; font-style: italic; color: #c1b8ac;">This beautiful bed frame is constructed of solid reclaimed wood and acacia wood. Acacia is native to India and grows very slowly. This makes the wood incredibly hard and durable.</div>
+														<br>
+														<img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/line.png" alt="line" width="240" height="2" /><br>
+														<div mc:edit="postcard" style="color: #9b8e7c; text-transform: uppercase; letter-spacing: .7px; font-style: normal; font-size: 14px; font-family: Arial; font-weight: bold;">
+														Caramel colour. 56" high; 87" long; 70" wide<br>
+														List price: $1789.99 Starting bid: $200<br>
+														Bidding April 2-5 only!<br>
+														<a style="color: #c1b8ac;" href="http://www.wickeremporium.ca/products/1003971/Cambria-Queen-Size-Bed-Frame.html">View on our website</a>
+													<br></div>
+													</td></tr></table> <!--/description!-->
+													</td></tr></table><!-- /extra outside border -->
+												</td>
+												<td width="10"> </td>
+												</tr></table><!-- /side padding -->
+											
+												</td></tr>
+												<tr>
+												<td style="padding: 20px 40px 30px;">To place your bid on this item, please <a href="http://facebook.com/WickerEmporium" style="color: #49707c">Like our Facebook Page</a> and click on the <a style="color: #49707c" href="http://www.facebook.com/WickerEmporium/app_261949193920258">Auction box</a>, or follow the links included in this email. Taxes are included in the final price. You can arrange to have the bed delivered to any Wicker Emporium store for pick up. Payment is due at pick up.
+							</td>
+												
+												</tr>
+											</table>
+											<!-- /item details -->
+										
+										</td>
+									</tr>
+									</table>
+								
+								
+							</td></tr>
+
+
+
+						<!-- /CONTENT -->
+
+
+
+
+						<!-- FOOTER -->
+						<tr>
+							<td>
+								<table text="#ffffff" width="100%" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td>
+											<table align="left" text="#9b8e7c" width="200" cellpadding="10" cellspacing="0" border="0" class="footer-left">
+												<tr>
+													<td style="color:#333333;">
+														<a href="*|UPDATE_PROFILE|*" target="_blank" style="color:#3b230a; text-decoration:none;">Update profile</a> &middot; <a href="*|UNSUB|*" target="_blank" style="color:#3b230a; text-decoration:none;">Unsubscribe</a></p>
+													</td>
+												</tr>
+											</table>
+											<table align="right" width="360" cellpadding="10" cellspacing="0" border="0" class="footer-right">
+												<tr>
+													<td style="color:#9b8e7c;">
+														*|FACEBOOK:LIKE|*
+														*|TWITTER:TWEET|*
+                                                        <a style="display: inline; float: right;" href="*|FORWARD|*"><img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/email.png" alt="email" width="61" height="21"></a>
+
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- /FOOTER -->
+
+
+						<!-- SUBFOOTER -->
+						<tr>
+							<td>
+								<table width="100%" cellpadding="10" cellspacing="0" border="0">
+									<tr>
+										<td valign="top" align="center" style="font-size:11px;">
+											*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|* <br>
+																&copy; *|CURRENT_YEAR|* Wicker Emporium, 114 Chain Lake Drive, Halifax NS B3S 1B1 
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- /SUBFOOTER -->
+
+
+					</table>
+				</td>
+			</tr>
+		</table>
+		<!-- End of wrapper table -->
+	</div>
+
+</body>
+</html>
