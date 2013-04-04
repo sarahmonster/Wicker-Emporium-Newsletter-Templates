@@ -153,11 +153,11 @@
 			.columnContent img{
 				display:inline;
 				height:auto;
-				background:#EDE6DE url("http://wickeremporium.ca/mkg/newsletter/images/horizontal-paper.jpg");
+				background:#EDE6DE url("http://mkg.wickeremporium.ca/mailchimp/templates/img/horizontal-paper.jpg");
 				background-color:#EDE6DE;
-				background-image:url("http://wickeremporium.ca/mkg/newsletter/images/horizontal-paper.jpg");
+				background-image:url("http://mkg.wickeremporium.ca/mailchimp/templates/img/horizontal-paper.jpg");
 				box-shadow: 2px 2px 3px rgba(80, 58, 25, 0.25);
-				padding: 7px;
+				padding: 10px;
 			}
 			
 			.columnContent h4 {
@@ -198,6 +198,9 @@
 			/* Resize images at smaller screen sizes. */
 			body[yahoo] .header-image {width:320px !important; height:auto !important;}
 			body[yahoo] .logo {width:320px !important; height:80px !important;}
+			body[yahoo] .thumb {width:100px !important; height:auto !important; padding: 0;}
+			body[yahoo] .columnContent h4 {font-size: 14px !important;}
+			body[yahoo] .price {font-size: 14px !important;}
 			
 			/* Resize page shadow at smaller screen sizes. */
 			body[yahoo] .shadow {width:280px !important; height:4px !important;}
@@ -369,7 +372,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                     <tr mc:repeatable="">
                                                         <td valign="top">
-                                                            <img src="img/117357_A.jpg" style="max-width:160px;" mc:label="image" mc:edit="tiwc150_image03">
+                                                            <img class="thumb" src="img/117357_A.jpg" style="max-width:160px;" mc:label="image" mc:edit="tiwc150_image03">
                                                            <div mc:edit="tiwc150_content03">
  	                                                          <h4 class="h4"><a href="">Title of item</a></h4>
  	                                                            <span class="price">$999.99</span>
@@ -386,7 +389,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                     <tr mc:repeatable="">
                                                         <td valign="top">
-                                                            <img src="img/117357_A.jpg" style="max-width:160px;" mc:label="image" mc:edit="tiwc150_image03">
+                                                            <img class="thumb" src="img/117357_A.jpg" style="max-width:160px;" mc:label="image" mc:edit="tiwc150_image03">
                                                             <div mc:edit="tiwc150_content03">
  	                                                          <h4 class="h4"><a href="">Title of item</a></h4>
  	                                                            <span class="price">$999.99</span>
@@ -403,7 +406,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
                                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                     <tr mc:repeatable="">
                                                         <td valign="top">
-                                                            <img src="img/117357_A.jpg" style="max-width:160px;" mc:label="image" mc:edit="tiwc150_image03">
+                                                            <img class="thumb" src="img/117357_A.jpg" style="max-width:160px;" mc:label="image" mc:edit="tiwc150_image03">
                                                             <div mc:edit="tiwc150_content03">
  	                                                          <h4 class="h4"><a href="">Title of item</a></h4>
  	                                                            <span class="price">$999.99</span>
