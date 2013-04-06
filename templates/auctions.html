@@ -107,7 +107,9 @@
 			/* Resize images at smaller screen sizes. */
 			body[yahoo] .item-image {width:280px !important; height:260px !important;}
 			body[yahoo] .logo {width:320px !important; height:80px !important;}
-			body[yahoo] .description {font-size: .8em !important;}
+			body[yahoo] .item-title {font-size: 14px !important; line-height: 10px !important;}
+			body[yahoo] .description {font-size: 16px !important;}
+			body[yahoo] .details {font-size: 10px !important;}
 			
 			/* Resize page shadow at smaller screen sizes. */
 			body[yahoo] .shadow {width:280px !important; height:4px !important;}
@@ -270,7 +272,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 												</tr>
 												<tr>
 													<td>
-														<a href="http://www.facebook.com/WickerEmporium/app_261949193920258"><img mc:edit="main-item-image"  src="http://mkg.wickeremporium.ca/mailchimp/templates/img/item-image.png" alt="item-image" width="560" height="520" alt="Item title" class="item-image" style="margin-bottom: -100px;"/></a>
+														<a href="http://www.facebook.com/WickerEmporium/app_261949193920258"><img mc:label="main-item-image" mc:edit="main-item-image"  src="http://mkg.wickeremporium.ca/mailchimp/templates/img/item-image.png" alt="item-image" width="560" height="520" alt="Item title" class="item-image" style="margin-bottom: -100px;"/></a>
 														
 													</td>
 												</tr>
@@ -284,13 +286,13 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 													
 													<td>
 													
-													<!--description!--><table class="description" style="border: 1px dashed #d6ebf3;" cellpadding="20" align="center"><tr><td align="center">
-														<div mc:edit="item-title" style="color: #9b8e7c; text-transform: uppercase; letter-spacing: .7px; font-style: normal; font-size: 18px; font-family: Arial; font-weight: bold;"><a style="color: #9b8e7c;" href="http://www.facebook.com/WickerEmporium/app_261949193920258">Cambria Collection Bed</a></div><br>
+													<!--description!--><table style="border: 1px dashed #d6ebf3;" cellpadding="20" align="center"><tr><td align="center">
+														<div class="item-title" mc:edit="item-title" style="color: #9b8e7c; text-transform: uppercase; letter-spacing: .7px; font-style: normal; font-size: 18px; font-family: Arial; font-weight: bold;"><a style="color: #9b8e7c;" href="http://www.facebook.com/WickerEmporium/app_261949193920258">Cambria Collection Bed</a></div><br>
 														<img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/line.png" alt="line" width="240" height="2" /><br>
-														<div mc:edit="description" style="font-size: 19px; font-family: Georgia; font-style: italic; color: #c1b8ac;">This beautiful bed frame is constructed of solid reclaimed wood and acacia wood. Acacia is native to India and grows very slowly. This makes the wood incredibly hard and durable.</div>
+														<div class="description" mc:edit="description" style="font-size: 19px; font-family: Georgia; font-style: italic; color: #c1b8ac;">This beautiful bed frame is constructed of solid reclaimed wood and acacia wood. Acacia is native to India and grows very slowly. This makes the wood incredibly hard and durable.</div>
 														<br>
 														<img src="http://mkg.wickeremporium.ca/mailchimp/templates/img/line.png" alt="line" width="240" height="2" /><br>
-														<div mc:edit="postcard" style="color: #9b8e7c; text-transform: uppercase; letter-spacing: .7px; font-style: normal; font-size: 14px; font-family: Arial; font-weight: bold;">
+														<div class="details" mc:edit="postcard" style="color: #9b8e7c; text-transform: uppercase; letter-spacing: .7px; font-style: normal; font-size: 14px; font-family: Arial; font-weight: bold;">
 														Caramel colour. 56" high; 87" long; 70" wide<br>
 														List price: $1789.99 Starting bid: $200<br>
 														Bidding April 2-5 only!<br>
@@ -334,7 +336,7 @@ The yahoo attribute is added if you are using media queries for mobile devices (
 											<table align="left" text="#9b8e7c" width="200" cellpadding="10" cellspacing="0" border="0" class="footer-left">
 												<tr>
 													<td style="color:#333333;">
-														<a href="*|UPDATE_PROFILE|*" target="_blank" style="color:#3b230a; text-decoration:none;">Update profile</a> &middot; <a href="*|UNSUB|*" target="_blank" style="color:#3b230a; text-decoration:none;">Unsubscribe</a></p>
+														<a href="*|UPDATE_PROFILE|*" target="_blank" style="color:#3b230a; text-decoration:none;">Update profile</a> &middot; <a href="*|UNSUB|*" target="_blank" style="color:#3b230a; text-decoration:none;">Unsubscribe</a>
 													</td>
 												</tr>
 											</table>
